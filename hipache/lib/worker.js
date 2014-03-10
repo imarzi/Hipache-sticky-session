@@ -364,7 +364,7 @@ var get_cookies = function(request) {
 
 	    
 	    //if (req.headers.cookie === undefined ) {
-        if (get_cookies(req)['stickyBackend'] === undefined || req.headers.cookie === undefined ) {
+        if (get_cookies(req)['stickyBackend'] === undefined) {
             
             this.cache.getBackendFromHostHeader(req.headers.host, function (err, code, backend) {
                 if (err) {
